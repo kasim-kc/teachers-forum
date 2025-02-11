@@ -1,0 +1,118 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.signup-page h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.signup-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.signup-page input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  background-color: inherit;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  margin-bottom: 0px;
+}
+
+.signup-page input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+.signup-page input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  outline: none;
+  border-color: #f0f0f0;
+}
+
+.email-otp-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.email-otp-container input[type="email"] {
+  width: 75%;
+}
+
+.send-otp-btn {
+  width: 20%;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.send-otp-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.signup-page button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-page button[type="submit"]:hover {
+  background-color: #f0f0f0;
+}
+
+.signup-page .login-link {
+  margin-top: 15px;
+}
+
+.signup-page .login-link p {
+  color: #ccc;
+}
+
+.signup-page .login-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-page .login-link a:hover {
+  color: #f0f0f0;
+}
