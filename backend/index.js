@@ -11,20 +11,9 @@ dotenv.config();
 const port = process.env.PORT;
 require("./db");
 
-const allowedOrigins = [process.env.FRONTEND_URL]; // add more as needed
+// const allowedOrigins = [process.env.FRONTEND_URL]; // add more as needed
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(
