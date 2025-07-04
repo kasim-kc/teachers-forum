@@ -199,6 +199,7 @@ router.post("/login", async (req, res, next) => {
       true
     );
   } catch (err) {
+    console.log(err);
     return responseFunction(res, 500, "Internal server error", err, false);
   }
 });
