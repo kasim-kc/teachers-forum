@@ -11,10 +11,7 @@ dotenv.config();
 const port = process.env.PORT;
 require("./db");
 
-const allowedOrigins = [
-  process.env.FRONTEND_URL,
-  "https://teachers-forum-wzkq.vercel.app",
-]; // add more as needed
+const allowedOrigins = [process.env.FRONTEND_URL]; // add more as needed
 
 app.use(
   cors({
