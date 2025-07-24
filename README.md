@@ -3,6 +3,10 @@
 A collaborative platform for teachers and students to connect, share study materials, and discuss academic topics seamlessly. Built with the MERN stack and deployed on Vercel.
 
 🔗 **Live Demo:** [https://teachers-forum-wzkq.vercel.app/](https://teachers-forum-wzkq.vercel.app/)
+Teacher's Login: username-- chhotakasim40@gmail.com
+password-- teacher
+Student's Login: username-- kasimsactive1@gmail.com
+password-- student
 
 ## Key Features
 
