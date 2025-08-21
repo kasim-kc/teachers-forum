@@ -95,13 +95,13 @@ To run this project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/teachers-forum.git
+   git clone https://github.com/kasim-kc/teachers-forum.git
    ```
 
 2. Set up backend:
 
    ```bash
-   cd server
+   cd backend
    npm install
    cp .env.example .env # Update with your credentials
    ```
@@ -109,7 +109,7 @@ To run this project locally:
 3. Set up frontend:
 
    ```bash
-   cd ../client
+   cd frontend
    npm install
    cp .env.example .env # Update with your API endpoints
    ```
@@ -117,11 +117,11 @@ To run this project locally:
 4. Run the application:
 
    ```bash
-   # In server directory:
+   # In backend directory:
    nodemon index.js
 
-   # In client directory:
-   npm run dev
+   # In frontend directory:
+   npm start
    ```
 
 ## Project Structure

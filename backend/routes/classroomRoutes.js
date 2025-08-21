@@ -280,7 +280,9 @@ router.get("/classroomsforstudent", authTokenHandler, async (req, res) => {
     }
 
     const studentEmail = user.email;
-    const classrooms = await Classroom.find({ students: studentEmail });
+    const classrooms = await Classroom.find({
+      students: studentEmail,
+    }).populate("owner");
 
     if (classrooms.length === 0) {
       return responseFunction(
